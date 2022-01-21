@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/5a88c8fc68.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,8 +17,8 @@
         </div>
         <nav>
             <ul>
-                <li>Hébergement</li>
-                <li>Activité</li>
+                <li> <a href="#H">Hébergements</a></li>
+                <li><a href= "#A">Activité</a></li>
             </ul>
         </nav>
     </header>
@@ -31,16 +31,15 @@
                 <div class="research_location">
                     <i class="fas fa-map-marker-alt"></i>
                 </div>
-                <div class="research_input">
-                    <input type="text" placeholder="Marseille , France">
-                </div>
-                <button class="research_button"><i class="fas fa-search"></i></button>
+                <form >
+                    <input class="research_field" type="search" placeholder="Marseille , France">
+                </form>
+                <button class="research_button"> Rechercher<!--<i class="fas fa-search"></i> A VOIR --></button>
             </div>
             <div class="filter_bloc">
                 <div class="filter_title">
                     <p>Filtres</p>
                 </div>
-                <div class="filter_all">
                     <div class="filter">
                         <div class="filter_logo"><i class="fas fa-money-bill-wave"></i></div>
                         <p>Économique</p>
@@ -55,10 +54,9 @@
                     </div>
                     <div class="filter">
                         <div class="filter_logo"><i class="fas fa-dog"></i></div>
-                        <p>Dog</p>
+                        <p>Animaux</p>
                     </div>
-
-                </div>
+                
             </div>
             <div class="information_bloc">
                 <div class="information_logo"><i class="fas fa-info"></i></div>
@@ -133,3 +131,4 @@
         </div>
     </footer>
 </body>
+
