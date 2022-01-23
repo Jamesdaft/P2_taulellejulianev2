@@ -66,7 +66,7 @@ header a:hover{
     margin-top: 20px;
 }
 
-.top h4{
+.top p{
     font-weight: 400;
     margin-top: 5px;
     font-size: 18px
@@ -109,45 +109,46 @@ input::placeholder{
     border: none;
     height: 50px;
     width:150px;
-    border-radius: 0% 30% 30% 0%;
+    border-radius: 0% 10% 10% 0%;
     background-color: #0065fc ;
     color: #fff;
     font-size: 18px;
 }
 
 .filter_bloc{
-    display: flex; 
-    justify-content: space-between;
+    display: flex;
     align-items: baseline;
-    width: 95%;
+    justify-content: space-between;
     max-width: 800px;
-    padding-top: 30px;
+    padding-top: 15px;
 }
-
-.filter_title{  
-    font-weight: bold;
-    padding-right: 15px;
-}
-
-
 
 .filter{
     display: flex;
-    align-items: center;
-    border: solid 3px ;
-    border-color: #f2f2f2;
+    align-items: baseline;
+    border: solid 3px #f2f2f2;
+    border-radius: 50px;
     border-left: none;
+}
+
+.filter p{
+    padding-left: 15px;
     padding-right: 15px;
-    border-radius: 30px ;
 }
 
 .filter_logo{
-    border: solid 3px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    border-color: #f2f2f2;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #deebff;
     border-radius: 100%;
-    padding: 0px 15px 15px 0px;
+    background: #deebff;
+    color: #0065fc;
 }
 
-
-
+.information_bloc{
+    display:flex;
+    align-items: baseline;
+}
