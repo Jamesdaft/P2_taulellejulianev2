@@ -29,13 +29,17 @@ body{
 
 .fa-star{
     color: #0065FC;
-    font-size: 10px;
     margin-right: -3px;
 }
 
 .grey{
     color: #b1b1b1;
 }
+
+span{
+    font-weight: bold;
+}
+
 
 /* Navigation */
 
@@ -60,7 +64,7 @@ nav ul{
 
 .nav-link{
     font-size: 12px;
-    padding-top: 42px;
+    padding-top: 31px;
     padding-right: 20px;
     padding-left: 20px;
     margin-right: 20px;
@@ -70,6 +74,8 @@ nav ul{
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
+
+
 
 /* Search */
 
@@ -99,6 +105,7 @@ nav ul{
     height: 35px;
     width: 35px;
 }
+
 .search-interface-input{
     border-left: none;
     border-right: none;
@@ -192,6 +199,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 40px;
 }
 
 .hebergements{
@@ -235,11 +243,10 @@ nav ul{
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 5px #b1b1b1;
-
+    width: 30%;
 }
 
 .hebergements-cards a img{
-    width: 155px;
     height: 70px;
     border-radius: 15px 15px 0px 0px ;
     object-fit: cover;
@@ -265,6 +272,11 @@ nav ul{
     font-size:9px ;
 }
 
+.afficher{
+    font-size: 13px;
+    padding-left: 35px;
+    font-weight: bold;
+}
 
 
 /* Les plus populaires */
@@ -328,4 +340,378 @@ nav ul{
 
 .populaires-review i{
     font-size: 9px;
+}
+
+/* Activités */
+
+.activities h2{
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.activities-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.vieuxport, .calanques{
+    display: flex;
+    flex-direction: column;
+    height: 285px;
+    width: 22%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #b1b1b1;
+}
+
+.vieuxport img, .calanques img{
+    object-fit: cover;
+    Width: 100%;
+    height: 92.5%;
+    border-radius: 15px 15px 0 0;
+}
+
+.pomegues-frioul, .notredame-longchamp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22%;
+}
+
+.pomegues,.frioul,.notredame,.longchamp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #b1b1b1;
+}
+
+.pomegues img,.frioul img,.notredame img,.longchamp img{
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    width: 100%;
+}
+
+.activities-cards h3{
+    font-size: 10px;
+    padding: 15px;
+}
+
+.pomegues{
+    height: 150px;
+
+}
+
+.frioul{
+    height: 100px;
+}
+
+.pomegues img{
+    height: 80%;
+}
+
+.frioul img{
+    height: 60%;
+}
+
+.notredame,.longchamp{
+    height: 130px;
+}
+
+.notredame img, .longchamp img{
+    height: 70%;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f2f2;
+
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-left: 6%;
+    margin-right: 6%;
+
+}
+
+.footer-item h3{
+    font-size: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-item li{
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+/* Tablette */
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    .container{
+        margin: 0;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .nav-logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .nav-logo img{
+        width: 100px;
+    }
+
+    nav ul{
+        width: 100%;
+    }
+    nav ul li{
+        width: 100%;
+    }
+    .nav-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 20px 0;
+        margin: 0;
+        font-size: 18px;
+        border-bottom: 4px solid #f2f2f2;
+    }
+    
+    .nav-link:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    .search{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .search-header h1{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .search-header p{
+        font-size: 16px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .search-interface-button-desktop{
+        display: none;
+    }
+    .search-interface-button-mobile{
+        display : initial;
+        border: none;
+    }
+    .search-interface-button-mobile i{
+        background-color: #0065FC;;
+        border-radius: 11px 11px 11px 11px;
+        color: white;
+    }
+    .search-interface-input{
+        width: 90%;
+    }
+
+    .search-filtres{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hotels{
+        flex-direction: column-reverse;
+    }    
+
+    .hebergements{
+        background-color: white;
+    }
+    .hebergements-cards a img{
+        height: 120px;
+    }
+
+    .populaires-cards a img{
+        height: 120px;
+    }
+
+    .activities{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Iphone 8 */
+
+@media screen and (min-width:360px) and (max-width:767px) {
+    .container{
+        margin: 0;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .nav-logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .nav-logo img{
+        width: 100px;
+    }
+
+    nav ul{
+        width: 100%;
+    }
+    nav ul li{
+        width: 100%;
+    }
+    .nav-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 20px 0;
+        margin: 0;
+        font-size: 18px;
+        border-bottom: 4px solid #f2f2f2;
+    }
+    
+    .nav-link:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    .search{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .search-header h1{
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+
+    .search-header p{
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+    
+    .search-form i{
+        height: 50px;
+        width: 50px;
+        font-size: 18px;
+    }
+    .search-interface-button-desktop{
+        display: none;
+    }
+    .search-interface-button-mobile{
+        display : initial;
+        border: none;
+    }
+    .search-interface-button-mobile i{
+        background-color: #0065FC;;
+        border-radius: 11px 11px 11px 11px;
+        font-size: 16px;
+        color: white;
+    }
+    .search-interface-input{
+        width: 90%;
+    }
+
+    .search-filtres{
+        flex-direction: row;
+
+    }
+
+    .search-filtres h2{
+        flex: 1 0 100%;
+        padding-bottom: 10px;
+    }
+
+    .search-filtres button{
+        margin: 5px;
+    }
+
+    .hotels{
+        flex-direction: column-reverse;
+    }
+
+    .populaires-cards{
+        width: 90%;
+    }
+
+    .populaires-cards h2{
+        font-size: 17px;
+        padding-bottom: 5px;
+    }
+
+    .populaires-cards p{
+        font-size: 14px;
+    }
+
+    .populaires-cards a img{
+        width: 38%;
+        height: 107px;
+    }
+
+    .populaires-review i{
+        font-size: 10px;
+    }
+
+    .hebergements{
+        background-color: white;
+    }
+    .hebergements-cards-line{
+        flex-direction: column;
+    }
+
+    .hebergements-cards-line a{
+        width: 100%;
+    }
+
+    .hebergements-description-header h2{
+        font-size: 17px;
+    }
+
+    .hebergements-description-header p{
+        font-size: 14px;
+    }
+
+    .hebergements-cards a img{
+        height: 135px;
+    }
+    .hebergements-review i{
+        font-size: 10px;
+    }
+
+    .activities-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .vieuxport, .calanques,.pomegues-frioul, .notredame-longchamp{
+        width: 90%;
+        height: 22%;
+    }
+
+   
+
 }
