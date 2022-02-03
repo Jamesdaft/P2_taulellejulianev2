@@ -698,8 +698,13 @@ footer{
     .hebergements-cards a img{
         height: 135px;
     }
+
     .hebergements-review i{
         font-size: 10px;
+    }
+
+    .afficher{
+        font-size: 15px;
     }
 
     .activities-cards{
@@ -707,11 +712,40 @@ footer{
         align-items: center;
     }
     
-    .vieuxport, .calanques,.pomegues-frioul, .notredame-longchamp{
-        width: 90%;
-        height: 22%;
+    .activities h2{
+        font-size: 20px;
+        padding-left: 20px;
     }
 
-   
+    .vieuxport, .calanques,.pomegues-frioul, .notredame-longchamp{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .vieuxport,.calanques,.pomegues,.frioul,.notredame,.longchamp{
+        height: 200px;
+    }
+
+    .pomegues,.notredame{
+        margin-bottom: 30px;
+    }
+
+    .vieuxport img, .calanques img, .pomegues img,.frioul img,.notredame img,.longchamp img {
+        height: 76%;
+    }
+
+    .activities-cards h3{
+        font-size: 15px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .footer-item{
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+    
 
 }
